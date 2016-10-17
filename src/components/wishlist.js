@@ -7,7 +7,7 @@ export default class Wishlist extends React.Component {
 
   render() {
     return (
-      <div>A Wishlist</div>
+      <div>A Wishlist Test 2</div>
     );
   }
 };
