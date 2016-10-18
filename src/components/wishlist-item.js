@@ -7,7 +7,11 @@ export default class WishlistItem extends React.Component {
 
   render() {
     return (
-      <div>A Wishlist Item</div>
+      <tr>
+        <td>{this.props.product_id}</td>
+        <td>{this.props.name}</td>
+        <td>{this.props.price}</td>
+      </tr>
     );
   }
 };
