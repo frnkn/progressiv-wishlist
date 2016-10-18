@@ -12,14 +12,16 @@ export default class Wishlist extends React.Component {
 
   renderWishlistItems() {
     let all_items = [];
-    /*
+    var idx = 0;
     for(let product of this.state.data){
+
       all_items.push(
-        <WishlistItem product_id={product.product_id} name={product.name} price={product.price} />
+        <WishlistItem key={idx} product_id={product.product_id} name={product.name} price={product.price} />
       );
+      idx++;
     }
-    return all_items;*/
-    map(); //add this here with map function; this must be indexed!
+    return all_items;
+
   }
 
   addWishlistItem() {
