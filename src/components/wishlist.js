@@ -5,23 +5,23 @@ import WishlistItem from './wishlist-item.js';
 export default class Wishlist extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = props;
     console.log(props.data);
     this.addDummyProduct = this.addDummyProduct.bind(this);
   }
 
   renderWishlistItems() {
     let all_items = [];
-    let products = this.props.data;
-    all_items.maps
-    /*
+    var idx = 0;
     for(let product of this.state.data){
+
       all_items.push(
-        <WishlistItem product_id={product.product_id} name={product.name} price={product.price} />
+        <WishlistItem key={idx} product_id={product.product_id} name={product.name} price={product.price} />
       );
+      idx++;
     }
-    return all_items;*/
-    map(); //add this here with map function; this must be indexed!
+    return all_items;
+
   }
 
   addWishlistItem() {
